@@ -1,0 +1,169 @@
+Country,Region,Continent,constant_2016_usd,current_usd,share_of_gdp,per_capita,share_of_govt_spending
+Algeria,North Africa,Africa,10217,10217.1,6.4%,251.6,15.1%
+Libya,North Africa,Africa,na,na,na,na,na
+Morocco,North Africa,Africa,3327,3327.0,3.2%,94.3,10.6%
+Tunisia,North Africa,Africa,988,987.7,2.3%,86.6,8.2%
+Angola,Sub-Saharan,Africa,2824,2824.3,2.6%,98.0,12.5%
+Benin,Sub-Saharan,Africa,79.6,79.6,0.9%,7.3,4.4%
+Botswana,Sub-Saharan,Africa,514,514.5,3.3%,228.6,9.8%
+Burkina Faso,Sub-Saharan,Africa,149,149.5,1.2%,8.0,5.4%
+Burundi,Sub-Saharan,Africa,66.5,66.5,2.2%,6.3,10.0%
+Cameroon,Sub-Saharan,Africa,387,387.4,1.3%,16.5,5.9%
+Cape Verde,Sub-Saharan,Africa,10.2,10.2,0.6%,18.9,2.1%
+Central African Rep.,Sub-Saharan,Africa,27,26.8,1.4%,na,12.2%
+Chad,Sub-Saharan,Africa,310,309.6,3.2%,21.4,21.1%
+Congo,Sub-Saharan,Africa,562,561.5,7.1%,109.6,15.8%
+"Congo, Dem. Rep.",Sub-Saharan,Africa,396,395.7,0.9%,5.0,8.0%
+Côte d’Ivoire,Sub-Saharan,Africa,603,602.5,1.7%,25.4,7.1%
+Djibouti,Sub-Saharan,Africa,na,na,na,na,na
+Equatorial Guinea,Sub-Saharan,Africa,18.2,18.2,0.2%,14.9,0.6%
+Eritrea,Sub-Saharan,Africa,na,na,na,na,na
+Ethiopia,Sub-Saharan,Africa,469,468.7,0.7%,4.6,3.6%
+Gabon,Sub-Saharan,Africa,203,202.8,1.4%,102.4,6.6%
+Gambia,Sub-Saharan,Africa,na,na,na,na,na
+Ghana,Sub-Saharan,Africa,162,161.8,0.4%,5.7,1.5%
+Guinea,Sub-Saharan,Africa,162,161.9,2.5%,13.1,11.7%
+Guinea-Bissau,Sub-Saharan,Africa,na,na,na,na,na
+Kenya,Sub-Saharan,Africa,933,933.1,1.3%,19.3,4.8%
+Lesotho,Sub-Saharan,Africa,41.5,41.5,2.0%,18.8,3.8%
+Liberia,Sub-Saharan,Africa,14.6,14.6,0.7%,3.2,1.9%
+Madagascar,Sub-Saharan,Africa,59.4,59.4,0.6%,2.4,3.7%
+Malawi,Sub-Saharan,Africa,35.7,35.7,0.7%,2.0,2.3%
+Mali,Sub-Saharan,Africa,362,362.4,2.6%,20.1,11.6%
+Mauritania,Sub-Saharan,Africa,136,136.1,4.1%,31.6,10.3%
+Mauritius,Sub-Saharan,Africa,23,23.0,0.2%,18.2,0.7%
+Mozambique,Sub-Saharan,Africa,112,112.2,1.0%,3.9,3.2%
+Namibia,Sub-Saharan,Africa,416,416.0,3.8%,167.7,9.7%
+Niger,Sub-Saharan,Africa,166,166.2,2.2%,8.0,8.3%
+Nigeria,Sub-Saharan,Africa,1723,1723.2,0.4%,9.3,4.3%
+Rwanda,Sub-Saharan,Africa,107.3,107.3,1.0%,9.0,4.9%
+Senegal,Sub-Saharan,Africa,305,304.8,2.1%,19.8,6.7%
+Seychelles,Sub-Saharan,Africa,22.0,22.0,1.6%,233.4,4.1%
+Sierra Leone,Sub-Saharan,Africa,26.8,26.8,0.8%,3.6,3.4%
+Somalia,Sub-Saharan,Africa,na,47.7,na,na,na
+South Africa,Sub-Saharan,Africa,3172,3171.8,1.1%,56.6,3.3%
+South Sudan,Sub-Saharan,Africa,135,135.3,3.8%,11.1,8.3%
+Sudan,Sub-Saharan,Africa,2749,2748.5,2.5%,69.4,25.0%
+Swaziland,Sub-Saharan,Africa,67.3,67.3,1.6%,50.1,5.0%
+Tanzania,Sub-Saharan,Africa,544,544.2,1.1%,9.8,6.1%
+Togo,Sub-Saharan,Africa,82.0,82.0,1.9%,10.8,5.9%
+Uganda,Sub-Saharan,Africa,523,523.4,2.1%,12.6,10.9%
+Zambia,Sub-Saharan,Africa,300,299.5,1.5%,18.1,5.9%
+Zimbabwe,Sub-Saharan,Africa,358,358.1,2.2%,22.2,7.4%
+Belize,Central America and the Caribbean,Americas,21.9,21.9,1.3%,59.6,3.7%
+Costa Rica,Central America and the Caribbean,Americas,0.0,0.0,0.0%,0.0,0.0%
+Cuba,Central America and the Caribbean,Americas,124,123.7,na,na,na
+Dominican Rep.,Central America and the Caribbean,Americas,480,479.7,0.7%,45.0,3.8%
+El Salvador,Central America and the Caribbean,Americas,247,247.1,0.9%,38.9,4.3%
+Guatemala,Central America and the Caribbean,Americas,291,290.9,0.4%,17.5,3.5%
+Haiti,Central America and the Caribbean,Americas,0.1,0.1,0.0%,na,0.0%
+Honduras,Central America and the Caribbean,Americas,355,355.0,1.6%,39.0,5.9%
+Jamaica,Central America and the Caribbean,Americas,138,137.6,1.0%,47.8,3.3%
+Mexico,Central America and the Caribbean,Americas,6020,6019.8,0.6%,47.2,2.2%
+Nicaragua,Central America and the Caribbean,Americas,85.1,85.1,0.6%,13.8,2.4%
+Panama,Central America and the Caribbean,Americas,0.0,0.0,0.0%,0.0,0.0%
+Trinidad & Tobago,Central America and the Caribbean,Americas,215,215.2,0.9%,157.7,2.7%
+Canada,North America,Americas,18132,18132.3,1.2%,499.7,2.9%
+USA,North America,Americas,600106,600106.4,3.2%,1862.6,9.0%
+Argentina,South America,Americas,4510,4509.6,0.8%,102.8,2.0%
+Bolivia,South America,Americas,552,552.4,1.6%,50.7,4.1%
+Brazil,South America,Americas,24225,24224.7,1.3%,116.7,3.4%
+Chile,South America,Americas,4796,4796.0,1.9%,267.8,7.4%
+Colombia,South America,Americas,8676,8676.0,3.1%,178.3,10.9%
+Ecuador,South America,Americas,2513,2513.2,2.6%,153.4,6.5%
+Guyana,South America,Americas,50.9,50.9,1.4%,65.8,4.5%
+Paraguay,South America,Americas,343,343.2,1.3%,51.0,5.0%
+Peru,South America,Americas,2536,2536.1,1.3%,79.8,6.2%
+Uruguay,South America,Americas,988,988.2,1.9%,286.9,5.7%
+Venezuela,South America,Americas,218,218.2,0.5%,6.9,1.1%
+Kazakhstan,Central Asia,Asia & Oceania,1281,1281.1,1.0%,71.2,4.3%
+Kyrgyzstan,Central Asia,Asia & Oceania,228,227.8,3.5%,38.3,8.9%
+Tajikistan,Central Asia,Asia & Oceania,na,na,na,na,na
+Turkmenistan,Central Asia,Asia & Oceania,na,na,na,na,na
+Uzbekistan,Central Asia,Asia & Oceania,na,na,na,na,na
+"China, P.R.",East Asia,Asia & Oceania,216031,216031.3,1.9%,153.9,6.0%
+Japan,East Asia,Asia & Oceania,46471,46471.3,0.9%,363.8,2.6%
+"Korea, North",East Asia,Asia & Oceania,na,na,na,na,na
+"Korea, South",East Asia,Asia & Oceania,36934,36934.4,2.6%,727.2,12.6%
+Mongolia,East Asia,Asia & Oceania,96,96.4,0.8%,31.8,2.1%
+Taiwan,East Asia,Asia & Oceania,9924,9924.1,1.9%,421.3,10.4%
+Afghanistan,South Asia,Asia & Oceania,186,185.7,1.0%,5.4,3.7%
+Bangladesh,South Asia,Asia & Oceania,3240,3239.7,1.4%,19.9,10.7%
+India,South Asia,Asia & Oceania,56638,56637.6,2.5%,42.8,9.0%
+Nepal,South Asia,Asia & Oceania,322,321.6,1.5%,11.1,7.0%
+Pakistan,South Asia,Asia & Oceania,9974,9973.8,3.4%,51.6,18.0%
+Sri Lanka,South Asia,Asia & Oceania,1741,1741.5,2.1%,83.7,10.9%
+Brunei,South-East Asia,Asia & Oceania,403,403.4,3.5%,953.1,9.1%
+Cambodia,South-East Asia,Asia & Oceania,370,369.7,1.8%,23.5,8.1%
+Indonesia,South-East Asia,Asia & Oceania,7385,7385.4,0.8%,28.3,4.7%
+Laos,South-East Asia,Asia & Oceania,na,na,na,na,na
+Malaysia,South-East Asia,Asia & Oceania,4169,4169.4,1.4%,133.7,6.0%
+Myanmar,South-East Asia,Asia & Oceania,3634,2455.8,3.7%,46.4,16.7%
+Philippines,South-East Asia,Asia & Oceania,3722,3721.6,1.2%,36.0,6.3%
+Singapore,South-East Asia,Asia & Oceania,9881,9881.5,3.3%,1757.5,17.6%
+Thailand,South-East Asia,Asia & Oceania,5876,5876.3,1.4%,85.3,1.1%
+Timor Leste,South-East Asia,Asia & Oceania,26.2,26.2,0.9%,20.7,1.4%
+Viet Nam,South-East Asia,Asia & Oceania,5017,5017.4,2.4%,53.1,8.2%
+Australia,Oceania,Asia & Oceania,26383,26382.9,2.1%,1093.6,5.6%
+Fiji,Oceania,Asia & Oceania,45.2,45.2,1.0%,50.3,3.0%
+New Zealand,Oceania,Asia & Oceania,2093,2093.4,1.1%,449.1,3.4%
+Papua New Guinea,Oceania,Asia & Oceania,79.1,79.1,0.6%,9.8,1.8%
+Albania,Central Europe,Europe,131,130.9,1.1%,44.7,1.2%
+Bosnia-Herzegovina,Central Europe,Europe,164,164.5,1.0%,46.8,2.3%
+Bulgaria,Central Europe,Europe,755,755.4,1.4%,105.9,4.3%
+Croatia,Central Europe,Europe,702,702.0,1.4%,166.6,2.9%
+Czech Rep.,Central Europe,Europe,1955,1954.9,1.0%,184.2,2.5%
+Estonia,Central Europe,Europe,498,497.7,2.1%,379.2,5.3%
+Hungary,Central Europe,Europe,1289,1288.7,1.0%,132.1,2.2%
+Kosovo,Central Europe,Europe,51.9,51.9,na,27.3,0.0%
+Latvia,Central Europe,Europe,407,406.9,1.5%,206.5,4.0%
+Lithuania,Central Europe,Europe,636,636.1,1.5%,218.7,4.4%
+"Macedonia, FYR",Central Europe,Europe,101,101.5,0.9%,48.8,3.1%
+Montenegro,Central Europe,Europe,61.7,61.7,1.5%,98.2,3.0%
+Poland,Central Europe,Europe,9164,9164.2,2.0%,239.7,4.7%
+Romania,Central Europe,Europe,2644,2644.2,1.4%,133.7,4.5%
+Serbia,Central Europe,Europe,710,710.4,1.9%,80.5,4.3%
+Slovak Rep.,Central Europe,Europe,1003,1003.0,1.1%,184.2,2.7%
+Slovenia,Central Europe,Europe,449,449.2,1.0%,216.2,2.5%
+Armenia,Eastern Europe,Europe,431,431.4,4.1%,147.5,15.1%
+Azerbaijan,Eastern Europe,Europe,1397,1397.0,3.7%,143.6,10.4%
+Belarus,Eastern Europe,Europe,597,597.2,1.3%,63.0,27.6%
+Georgia,Eastern Europe,Europe,350,350.5,2.4%,89.3,8.2%
+Moldova,Eastern Europe,Europe,29.7,29.7,0.4%,7.3,1.2%
+Russian Federation,Eastern Europe,Europe,69245,69245.3,5.5%,481.0,14.8%
+Ukraine,Eastern Europe,Europe,3423,3423.3,3.7%,77.0,9.0%
+Austria,Western Europe,Europe,2886,2885.9,0.7%,331.3,1.5%
+Belgium,Western Europe,Europe,4314,4314.1,0.9%,379.8,1.7%
+Cyprus,Western Europe,Europe,317,316.9,1.6%,270.9,4.1%
+Denmark,Western Europe,Europe,3593,3592.7,1.2%,629.0,2.2%
+Finland,Western Europe,Europe,3415,3415.0,1.4%,620.6,2.6%
+France,Western Europe,Europe,57358,57358.4,2.3%,886.2,4.1%
+Germany,Western Europe,Europe,41579,41579.5,1.2%,507.6,2.7%
+Greece,Western Europe,Europe,4963,4963.5,2.6%,443.8,5.2%
+Iceland,Western Europe,Europe,0,0.0,0.0%,0.0,0.0%
+Ireland,Western Europe,Europe,1002,1001.6,0.3%,211.9,1.2%
+Italy,Western Europe,Europe,28206,28205.8,1.5%,474.6,3.1%
+Luxembourg,Western Europe,Europe,261,260.7,0.4%,452.9,1.1%
+Malta,Western Europe,Europe,59.7,59.7,0.5%,139.0,1.4%
+Netherlands,Western Europe,Europe,9115,9115.2,1.2%,536.6,2.7%
+Norway,Western Europe,Europe,5997,5997.4,1.6%,1141.3,3.2%
+Portugal,Western Europe,Europe,3569,3569.1,1.7%,344.1,3.9%
+Spain,Western Europe,Europe,14014,14014.4,1.1%,302.4,2.7%
+Sweden,Western Europe,Europe,5428,5427.5,1.1%,551.7,2.2%
+Switzerland,Western Europe,Europe,4571,4571.3,0.7%,544.1,2.0%
+UK,Western Europe,Europe,48119,48118.9,1.8%,731.4,4.7%
+Bahrain,Middle East,Middle East,1506,1505.5,4.7%,1056.4,13.3%
+Egypt,Middle East,Middle East,4513,4513.0,1.5%,47.2,5.2%
+Iran,Middle East,Middle East,12264,12264.0,2.8%,152.8,15.2%
+Iraq,Middle East,Middle East,5970,5970.4,3.5%,160.5,8.4%
+Israel,Middle East,Middle East,14783,14782.8,4.7%,1804.6,11.6%
+Jordan,Middle East,Middle East,1770,1769.6,4.6%,187.1,15.8%
+Kuwait,Middle East,Middle East,6447,6446.7,5.8%,1590.8,11.0%
+Lebanon,Middle East,Middle East,2606,2606.5,5.0%,433.9,17.8%
+Oman,Middle East,Middle East,10581,10581.3,16.0%,2391.4,31.0%
+Qatar,Middle East,Middle East,na,na,na,na,na
+Saudi Arabia,Middle East,Middle East,63673,63672.8,9.9%,1972.8,25.5%
+Syria,Middle East,Middle East,na,na,na,na,na
+Turkey,Middle East,Middle East,17854,17854.0,2.1%,224.5,5.9%
+UAE,Middle East,Middle East,na,na,na,na,na
+Yemen,Middle East,Middle East,na,na,na,na,na
