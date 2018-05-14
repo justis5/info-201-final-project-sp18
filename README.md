@@ -19,7 +19,8 @@ _**What does your audience want to learn from your data?  Please list out at lea
 _**How will you be reading in your data (i.e., are you using an API, or is it a static .csv/.json file)?**_  
   We will be using packages such as httr, dplyr and .csv files. They all allows scripts to always work with the most correct data in the system or provided, and specifies where and how particular data is used in programming R.
 
-_**What types of data-wrangling (reshaping, reformatting, etc.) will you need to do to your data?**_
+_**What types of data-wrangling (reshaping, reformatting, etc.) will you need to do to your data?**_  
+  Necessary data-wrangling process may involve extracting only numeric values from.csv files. Data from .csv file are to be arranged and compared to for maximum/minimum and mean values. Mappings of two data/vectors are required to compare and discover potential correlations.
 
 _**What (major/new) libraries will be using in this project (no need to list common libraries that are used in many projects such as dplyr)**_  
   Since our project loads data from csv.files rather than any special API's, it seems that no major/new libraries will required. We'll be using the libraries used so far during the quarter. The project will certainly use dplyr to perform data.frame manipulation as well as a combination of ggplot2 or plotly to create visualizations. The shiny library will be used to create the interactive application.  The stringr library may be used to use helpful functions like gsub.
