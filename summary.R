@@ -12,7 +12,8 @@ num_country_region <- function(hpi,region) {
 }
 
 # average life expectancy for all country
-average_life_expectancy <- sum(hpi$Average.Life..Expectancy)/num_country
+average_life_expectancy <- round(sum(hpi$Average.Life..Expectancy)/num_country,
+                                 digits=2)
 
 # avergae life expectancy by region
 average_le_region <- function(hpi,region){
@@ -34,7 +35,25 @@ average_foot_region <- function(hpi,region){
   return(num_foot_region)
 }
 
-#aver
+# average population by region
+average_pop_region <- function(hpi,region){
+  num_pop_region <- hpi %>% select(Region, Population) %>% 
+    filter(Region == region) %>% group_by(Region) %>%
+    summarise(average_pop_region= round(mean(Population), digits=2))
+  return(num_pop_region)
+}
+
+# average HPI
+average_HPI <- round(sum(hpi$Happy.Planet.Index)/num_country, digits=2)
+
+# average HPI by region
+average_HPI_region <- function(hpi,region){
+  num_HPI_region <- hpi %>% select(Region, Happy.Planet.Index) %>% 
+    filter(Region == region) %>% group_by(Region) %>%
+    summarise(average_HPI_region= round(mean(Happy.Planet.Index), digits=2))
+  return(num_HPI_region)
+}
+
 # by region data
 region_hpi<- hpi %>% 
           select(Region, Average.Life..Expectancy, Average.Wellbeing..0.10., 
@@ -47,5 +66,25 @@ region_hpi<- hpi %>%
                     Footprint = round(mean(Footprint..gha.capita.),digits=2),
                     population = round(mean(Population),digits=2),
                     Happy.Planet..Index = round(mean(Happy.Planet.Index),digits=2),
-                    GDP.per.capita =round(mean(X.GDP.capita....),digits=2))
+                    GDP.per.capita. =round(mean(X.GDP.capita....),digits=2))
 write.csv(region_hpi,file="data/region_hpi.csv")
+
+#highest HPI region
+HPI_max <- region_hpi %>% 
+            filter(Happy.Planet..Index == max(Happy.Planet..Index)) %>%
+            select(Region, Happy.Planet..Index) 
+
+#highest average Life expectancy region
+le_max <- region_hpi %>% 
+  filter(Average.Life.Expectancy == max(Average.Life.Expectancy)) %>%
+  select(Region, Average.Life.Expectancy) 
+
+#lowest footprint region
+footprint_min <- region_hpi %>% 
+                filter(Footprint == min(Footprint)) %>%
+                select(Region, Footprint) 
+
+#highest GDP region
+GDP_max <- region_hpi %>% 
+          filter(GDP.per.capita == max(GDP.per.capita)) %>%
+          select(Region, GDP.per.capita) 
