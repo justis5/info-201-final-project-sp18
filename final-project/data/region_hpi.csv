@@ -1,7 +1,7 @@
-"","Region","Average.Life.Expectancy","Average.Wellbeing","Happy.Life.Year","Footprint","population","Happy.Planet..Index","GDP.per.capita"
-"1","Americas",74.02,74.02,35.55,3.26,37758340.48,32.23,11435.6
-"2","Asia Pacific",73.15,73.15,31.32,3.17,181282941.24,29.71,12668.38
-"3","Europe",81.04,81.04,49.21,5.83,20723979.6,29.56,48534.2
-"4","Middle East and North Africa",72.46,72.46,26.83,2.74,31848521.07,25.81,7990
-"5","Post-communist",73.58,73.58,31.46,3.85,15034326.31,25.49,9264.73
-"6","Sub Saharan Africa",58.66,58.66,15.02,1.58,21147327.26,19.19,2123.47
+"","Region","Average.Life.Expectancy","Average.Wellbeing","Footprint","population","Happy.Planet..Index","GDP.per.capita.","Inequality.of.Outcomes"
+"1","Americas",74.02,74.02,3.26,37758340.48,32.23,11435.6,1408
+"2","Asia Pacific",73.15,73.15,3.17,181282941.24,29.71,12668.38,1747.62
+"3","Europe",81.04,81.04,5.83,20723979.6,29.56,48534.2,3005
+"4","Middle East and North Africa",72.46,72.46,2.74,31848521.07,25.81,7990,1807.14
+"5","Post-communist",73.58,73.58,3.85,15034326.31,25.49,9264.73,973.08
+"6","Sub Saharan Africa",58.66,58.66,1.58,21147327.26,19.19,2123.47,2897.06

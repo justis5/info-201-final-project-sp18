@@ -7,6 +7,10 @@ library("countrycode")
 hpi.data <- read.csv("./data/hpi.csv")
 
 shinyServer(function(input, output) {
+  output$explanation <- renderImage({
+    list(src = "./imgs/1.png",
+         width = 800)
+  }, deleteFile = FALSE)
   
   output$life_scatter <- renderPlotly({
     life_exp_df <- life_exp_table %>%

@@ -2,7 +2,6 @@ library(shiny)
 library(plotly)
 library(shinythemes)
 
-# Define UI for application that draws a histogram
 shinyUI(navbarPage(
   theme = shinytheme("readable"),
   # Application title
@@ -11,11 +10,46 @@ shinyUI(navbarPage(
     "Introduction",
     titlePanel("Happy Planet Index"),
     tags$p("The dataset we are working with is the Happy Planet Index 2016 
-    downloaded from from the Happy Planet Index", a("website.", href = "http://happyplanetindex.org/"),
-    "The group who collected the data is New Economics Foundation(NEF)."),
+    downloaded from from the Happy Planet Index", a("website.",
+                                                    href = "http://happyplanetindex.org/"),
+           "The group who collected the data is New Economics Foundation(NEF)."),
+    tags$p("New Economics Foundation (NEF) is the UK's leading think tank 
+           promoting social, economic and environmental justice."),
+    tags$h3("What is HPI?"),
+    tags$p("HPI calculates how satisfied the residents are with their lives in 
+           that country. It takes into account variables that we will explore
+           such as a country’s ecological footprint per capita,
+           average life expectancy, and GDP per capita($)."),
+    tags$p("HPI provides a metric that is able to assess 'the production of 
+           human well-being (not necessarily material goods) per unit of
+           extraction of or imposition upon nature' in a quantitative 
+           measurement."),
     tags$img(
       src = "https://static1.squarespace.com/static/5735c421e321402778ee0ce9/t/578cfd862994ca21a7d62685/1468968273705/?format=2500w",
-      width = 500)
+      width = 500),
+    imageOutput("explanation"),
+    tags$h3("What sort of data does this dataset have?"),
+    tags$p("For each country, there is information on HPI rank/score, life
+           expectancy, well-being, ecological footprint, inequality, 
+           GDP per capita($), and population."),
+    
+    tags$ul(tags$li(tags$b("Qualitative variables:"), "region"),
+            tags$li(tags$b("Quantitative variables:"), "average life expectancy 
+                    at birth, average well-being on a scale of ten, happy life 
+                    years, footprint in gha capita, inequality of outcome, 
+                    inequality-adjusted life expectancy, inequality-adjusted 
+                    wellbeing,  the Happy Planet index score, GDP per capita, and 
+                    population.")
+      
+    ),
+    tags$h3("What questions will be answered?"),
+    tags$p("The graph above shows how HPI is calculated. The questions our project 
+will answer by analysing the data downloaded on happyplanetindex.org are:"),
+    tags$ol(
+      tags$li("Does higher GDP/capota correlates with a higher average life expectancy?"),
+      tags$li("Which regions has the highest and lowest HPI?"),
+      tags$li("What's the relationship between the footprint with population of a counrty?")
+    )
     
   ),
   # tab panel for histogram
