@@ -230,13 +230,13 @@ will answer by analysing the data downloaded on happyplanetindex.org are:"),
       titlePanel("Info201 group BC6"),
       tags$p("We are a group of students enrolled in the INFO 201B in spring 2018,
              and this is our final project."),
-      tags$h5("Emily Liu"),
+      tags$b("Emily Liu"),
       tags$p("Emily is a Freshmen intend to major in Business."),
-      tags$h5("Leo Guo"),
+      tags$b("Leo Guo"),
       tags$p("Leo is a Sophomore intend to major in Infomatics."),
-      tags$h5("Justin Sim"),
+      tags$b("Justin Sim"),
       tags$p("Justin is a Junior pursuing Sociology and Infomatics."),
-      tags$h5("Erica Tan"),
+      tags$b("Erica Tan"),
       tags$p("Erica is a Junior pursuing Sociology and minor in Infomatics.")
     )
   
