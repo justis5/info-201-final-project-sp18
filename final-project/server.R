@@ -16,7 +16,11 @@ library("countrycode")
 
 source("histogram_analysis.R")
 source("scripts/build_histogram.R")
+
 hpi.data <- read.csv("./data/hpi.csv")
+
+source("analysis.R")
+source("scripts/build_scatter.R")
 
 shinyServer(function(input, output) {
   
@@ -55,7 +59,7 @@ shinyServer(function(input, output) {
       type = 'choropleth',
       locations = hpi.df$Country.code , locationmode = 'world' , colorscale = 'Viridis' ,
       z = hpi.df$Happy.Planet.Index,
-      text = paste0("HPI rank: ", hpi.df$HPI.Rank, "<br>", "GDP per capia: ", hpi.df$X.GDP.capita...PPP..,
+      text = paste0("HPI rank: ", hpi.df$HPI.Rank, "<br>", "GDP per capitaa: ", hpi.df$X.GDP.capita....,
                     "<br>", "HPI: ", hpi.df$Happy.Planet.Index, "<br>", "Population: ",
                     hpi.df$Population, "<br>", "Average Life Expectancy: ",
                     hpi.df$Average.Life..Expectancy)
@@ -66,6 +70,19 @@ shinyServer(function(input, output) {
               title = paste0("Worldwide Happy Planet Index", "<br>", "(hover for more information)"))
     
     ###########################
+  })
+  
+  output$pop_scatter <- renderPlotly({
+    footprint_df <- footprint_table %>%
+      filter(if (input$region != "All") region == input$region else TRUE)
+    plot <- build_scatter(footprint_df, input$region, "population")
+  })
+  
+  
+  output$gdp_scatter <- renderPlotly({
+    footprint_df <- footprint_table %>%
+      filter(if (input$region != "All") region == input$region else TRUE)
+    plot <- build_scatter(footprint_df, input$region, "gdp_capita")
   })
   
 })
