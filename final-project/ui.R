@@ -112,10 +112,16 @@ shinyUI(navbarPage(
                    ),
                    tags$p("If all countries are taken into consideration, the 
                           Pearson's correlation coefficient for these two
-                          variables was found to be -0.056. This suggests that 
-                          there is a very weak negative correlation
+                          variables was found to be ", 
+                          paste0(signif(overall_pop_pcc, 3), "."),"This suggests 
+                          that there is a very weak negative correlation
                           between a country's population and a country's
-                          footprint.")
+                          footprint."),
+                   tags$p("With a p-value of ",
+                          paste0(signif(pop_p_value, 3), ",") , "there
+                          is not enough evidence to reject the null hypothesis
+                          that the true correlation is equal to 0. The results
+                          were not statistically significant.")
                    ),
           tabPanel("GDP",
                    fluidRow(
@@ -123,15 +129,35 @@ shinyUI(navbarPage(
                    ),
                    tags$p("If all countries are taken into consideration, the 
                           Pearson's correlation coefficient for these two
-                          variables was found to be 0.80. This suggests that 
-                          there is a very strong positive correlation
-                          between a country's gdp per capita and a country's
-                          footprint."))
-          
+                          variables was found to be ", 
+                          paste0(signif(overall_gdp_pcc, 3), "."), 
+                          "This suggests that there is a very strong positive
+                          correlation between a country's gdp per capita and a 
+                          country's footprint."),
+                   tags$p("With a p-value of ", 
+                          paste0(signif(gdp_p_value, 2), ","), "there 
+                          is enough evidence to reject the null hypothesis that
+                          the true correlation is equal to 0. The results were 
+                          statistically significant.")
+                   ),
+          tabPanel("Summary",
+                   fluidRow(
+                     column(6,
+                            tableOutput("region_summary")
+                       
+                     )
+                   ),
+                   tags$h2("Note"),
+                   tags$p("Within the region specified, pop_pcc is the 
+                          Pearson correlation coefficient between
+                          a country's population and their footprint."),
+                   tags$p("Within the region specified, gdp_pcc is the
+                          Pearson correlation coefficient between
+                          a country's gdp per capita and their footprint.")
                    )
-        
           )
-          )
-                   )
+        )
+      )
+    )
   
 ))

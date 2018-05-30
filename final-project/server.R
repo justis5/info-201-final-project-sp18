@@ -12,16 +12,15 @@ library("plotly")
 library("dplyr")
 library("rsconnect")
 library("countrycode")
-
-
 source("histogram_analysis.R")
 source("scripts/build_histogram.R")
-
-hpi.data <- read.csv("./data/hpi.csv")
-
 source("analysis.R")
 source("scripts/build_scatter.R")
 source("scripts/build_life_scatter.R")
+
+hpi.data <- read.csv("./data/hpi.csv")
+
+
 shinyServer(function(input, output) {
   output$life_scatter <- renderPlotly({
     life_exp_df <- life_exp_table %>%
@@ -84,7 +83,7 @@ shinyServer(function(input, output) {
     plot <- build_scatter(footprint_df, input$region, "population")
   })
   
-  
+  output$region_summary <- renderTable(footprint_region_summary)
   output$gdp_scatter <- renderPlotly({
     footprint_df <- footprint_table %>%
       filter(if (input$region != "All") region == input$region else TRUE)

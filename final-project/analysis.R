@@ -23,8 +23,19 @@ footprint_region_summary <- footprint_table %>%
   summarise(countries = n(),
             mean_population = mean(population),
             mean_footprint = mean(footprint),
-            pop_pearson_value = cor(population, footprint),
-            gdp_pearson_value = cor(gdp_capita, footprint))
+            pop_pcc = cor(population, footprint),
+            gdp_pcc = cor(gdp_capita, footprint))
 
+colnames(footprint_region_summary)[colnames(footprint_region_summary) ==
+                            "mean_population"] <- "Mean Pop (mill)"
+colnames(footprint_region_summary)[colnames(footprint_region_summary) == 
+                                     "mean_footprint"] <-
+  "Footprint (gha capita)" 
 
+overall_pop_pcc <- cor(footprint_table$population, footprint_table$footprint)
+pop_p_value <- cor.test(footprint_table$population,
+                        footprint_table$footprint)$p.value
 
+overall_gdp_pcc <- cor(footprint_table$gdp_capita, footprint_table$footprint)
+gdp_p_value <- cor.test(footprint_table$gdp_capita,
+                        footprint_table$footprint)$p.value
