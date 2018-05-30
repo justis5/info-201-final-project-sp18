@@ -1,16 +1,19 @@
-build_hist <- function(df, bin_num) {
+build_hist <- function(df, bin_num, color_var) {
+  color_vars <- data.frame(variable = c("gdp_category", "Region"),
+                           name = c("GDP/Capita", "Region"))
+  color_column <- df[[color_var]]
+  color_name <- as.character(color_vars$name[color_vars$variable == color_var])
   chart <- ggplot(df) +
     geom_histogram(
       mapping = aes(
         x = avg_life_exp,
-        fill = gdp_category
+        fill = color_column
       ), binwidth = bin_num) +
     labs(
-      title = "Histogram of average life expectancy and GDP",
-      subtitle = "Info 201 B SP18",
+      title = "Histogram of average life expectancy",
       x = "Average life expectancy",
       y = "Frequency",
-      fill = "GDP/Capita"
+      fill = color_name
     )
   return(chart)
 }

@@ -21,14 +21,20 @@ hpi.data <- read.csv("./data/hpi.csv")
 
 source("analysis.R")
 source("scripts/build_scatter.R")
-
+source("scripts/build_life_scatter.R")
 shinyServer(function(input, output) {
+  output$life_scatter <- renderPlotly({
+    life_exp_df <- life_exp_table %>%
+      filter(if (input$life_region != "All") Region == input$life_region else TRUE)
+    plot <- build_scatter_life_exp(life_exp_df, input$life_region)
+  })
+  
   
   # Define server logic required to draw a histogram
   output$life_hist <- renderImage({
     outfile <- tempfile(fileext = ".png")
     png(outfile, width = 500, height = 400)
-    print(build_hist(hist_hpi, input$bins))
+    print(build_hist(hist_hpi, input$bins, input$color))
     dev.off()
     list(src = outfile,
          content = "image/png",

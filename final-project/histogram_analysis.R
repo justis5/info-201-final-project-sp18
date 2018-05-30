@@ -34,6 +34,8 @@ hist_hpi$gdp_category <- cut(hist_hpi$gdp_capita,
 # https://stackoverflow.com/questions/32975801/
 # specifying-bin-range-values-for-continuous-data-in-r
 
+life_exp_table <- hist_hpi %>%
+  select(Country, Region, gdp_capita, Population, avg_life_exp)
 
-
-
+life_exp_table$gdp_capita <- life_exp_table$gdp_capita / 1000
+life_exp_table$Population <- life_exp_table$Population / (10^6)

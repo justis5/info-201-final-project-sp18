@@ -24,16 +24,45 @@ shinyUI(navbarPage(
     # create sidebar layout for histogram
     sidebarLayout(
       sidebarPanel(
+        tags$h4("Scatterplot Options"),
+        selectInput(
+          "life_region",
+          label = "Select region",
+          choices = c(as.list(life_exp_table[, 2]), "All"),
+          selected = "All"
+        ),
+        tags$h4("Histogram Options"),
         sliderInput(
           "bins",
           "Number of bins",
           min = 5,
           max = 10,
-          value = 7)
+          value = 7),
+        selectInput(
+          "color",
+          "Color variable",
+          choices = list(
+            "GDP/Capita" = "gdp_category",
+            "Region" = "Region"
+          )
+        )
           
       ),
       mainPanel(
-        imageOutput("life_hist")
+        tabsetPanel(
+          tabPanel("Scatterplot",
+                   fluidRow(
+                     plotlyOutput("life_scatter")
+                   )
+                   ),
+          tabPanel("Histogram",
+                   fluidRow(
+                     imageOutput("life_hist")
+                   )
+            
+          )
+        )
+        
   
       )
     )
