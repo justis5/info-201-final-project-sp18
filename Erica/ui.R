@@ -13,8 +13,9 @@ library(shinythemes)
 source("analysis.R")
 source("summary.R")
 library(dplyr)
+library(knitr)
 library(rsconnect)
-library(countrycode)
+library('countrycode')
 
 # Define UI for application that draws a histogram
 ui <- navbarPage("info201 final project",
@@ -45,7 +46,7 @@ P ("the region with the highest average well being is", wellbeing_max,
     "The region with the highest average life expectany is", le_max, 
    ".The region with the lowest average inequality of outcomes is",inequality_min,
    ". Last but not the least, the region with the lowest average ecological footprints is", footprint_min),
-renderDataTable(region_hpi),
+dataTableOutput(region_hpi),
 
 #  sidebarLayout(
 #  selectInput("select", label = h3("Select box"), 
