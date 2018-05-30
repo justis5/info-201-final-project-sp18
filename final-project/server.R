@@ -5,6 +5,7 @@ library("rsconnect")
 library("countrycode")
 
 hpi.data <- read.csv("./data/hpi.csv")
+region_hpi <- read.csv("./data/region_hpi.csv")
 
 shinyServer(function(input, output) {
   output$explanation <- renderImage({
@@ -81,4 +82,24 @@ shinyServer(function(input, output) {
     plot <- build_scatter(footprint_df, input$region, "gdp_capita")
   })
   
+  datasetInput <- reactive({
+    switch(input$dataset,
+           "Happy planet Index 2016" = hpi.data ,
+           "Happy planet Index by Region 2016" = region_hpi)
+  })
+  
+  # Table of selected dataset ----
+  output$table <- renderTable({
+                  datasetInput()
+  })
+  
+  # Downloadable csv of selected dataset ----
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      paste(input$dataset, ".csv", sep = "")
+    },
+    content = function(file) {
+      write.csv(datasetInput(), file, row.names = FALSE)
+    }
+  )
 })

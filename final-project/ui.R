@@ -3,7 +3,7 @@ library(plotly)
 library(shinythemes)
 
 shinyUI(navbarPage(
-  theme = shinytheme("readable"),
+  theme = shinytheme("flatly"),
   # Application title
   "Exploring HPI Dataset",
   tabPanel(
@@ -49,8 +49,18 @@ will answer by analysing the data downloaded on happyplanetindex.org are:"),
       tags$li("Does higher GDP/capota correlates with a higher average life expectancy?"),
       tags$li("Which regions has the highest and lowest HPI?"),
       tags$li("What's the relationship between the footprint with population of a counrty?")
-    )
+    ),
     
+    sidebarLayout(
+      sidebarPanel(
+        
+        # Input: Choose dataset ----
+        selectInput("dataset", "Choose a dataset:",
+                    choices = c("Happy planet Index 2016", 
+                                "Happy planet Index by Region 2016")),
+        # Button
+        downloadButton("downloadData", "Download")
+      )
   ),
   # tab panel for histogram
   tabPanel(
