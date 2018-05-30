@@ -224,6 +224,13 @@ will answer by analysing the data downloaded on happyplanetindex.org are:"),
           )
         )
       )
+    ),
+    tabPanel(
+      "About Us",
+      titlePanel("Info201 group BC6"),
+      tags$p("We are a group of students enrolled in the INFO 201B in spring 2018,
+             and this is our final project."),
+      tags$p("Our names are: Emily Liu, Leo Guo, Justin Sim, and Erica Tan.")
     )
   
 ))
