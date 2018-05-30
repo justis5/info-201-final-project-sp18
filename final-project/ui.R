@@ -49,7 +49,25 @@ will answer by analysing the data downloaded on happyplanetindex.org are:"),
       tags$li("Does higher GDP/capota correlates with a higher average life expectancy?"),
       tags$li("Which regions has the highest and lowest HPI?"),
       tags$li("What's the relationship between the footprint with population of a counrty?")
-    )
+    ),
+    tags$h3("Summary"),
+    tags$p("Just by looking at the data, there are", num_country, "in the data, 
+            and the average Happy Planet Index score is", average_HPI,
+           ". The region with the highest Happy Planet Index score is", HPI_max,
+           "."),
+    tags$p("The four indicators being used to calculate HPI, which are 1) well being, 
+2) average life expectany, 3) inequality of outcomes, and 4) ecological footprints, have 
+       an corresponding average results for all countries presented in the data set"),
+    tags$ol(tags$li(round(average_wellbeing, 2)), tags$li(average_life_expectancy), 
+            tags$li(paste0(round(average_inequality, 2),"%")), tags$li(average_footprint)),
+    tags$p("Here are several other insights"),
+    tags$ul(tags$li("The region with the highest average well being is", wellbeing_max),
+       tags$li("The region with the highest average life expectany is", le_max), 
+       tags$li("The region with the lowest average inequality of outcomes is",inequality_min),
+       tags$li("Last but not the least, the region with the lowest average ecological footprints is", footprint_min))
+    
+    
+       
     
   ),
   # tab panel for histogram
