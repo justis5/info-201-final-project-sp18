@@ -8,26 +8,58 @@
 #
 
 library(shiny)
+library(plotly)
+library(shinythemes)
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
-  
+shinyUI(navbarPage(
+  theme = shinytheme("readable"),
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  "Exploring HPI Dataset",
   
-  # Sidebar with a slider input for number of bins 
-  sidebarLayout(
-    sidebarPanel(
-       sliderInput("bins",
-                   "Number of bins:",
-                   min = 1,
-                   max = 50,
-                   value = 30)
-    ),
+  # tab panel for histogram
+  tabPanel(
+    "life expectancy",
+    titlePanel("Life Expectancy"),
+    # create sidebar layout for histogram
+    sidebarLayout(
+      sidebarPanel(
+        sliderInput(
+          "bins",
+          "Number of bins",
+          min = 5,
+          max = 10,
+          value = 7)
+          
+      ),
+      mainPanel(
+        imageOutput("life_hist")
+  
+      )
+    )
     
-    # Show a plot of the generated distribution
-    mainPanel(
-       plotOutput("distPlot")
+    
+  ),
+  
+  tabPanel(
+    "HPI",
+    titlePanel("Worldwide HPI"),
+    
+    sidebarLayout(
+      sidebarPanel(
+        
+        sliderInput("hpi",
+                    "hpi range:",
+                    min = 12.8,
+                    max = 44.7,
+                    value = c(20, 35))
+      ),
+      
+      mainPanel(
+        plotlyOutput("hpiMap")
+      )
     )
   )
+  
+  
 ))
