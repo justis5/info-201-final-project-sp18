@@ -3,7 +3,7 @@ library(plotly)
 library(shinythemes)
 
 shinyUI(navbarPage(
-  theme = shinytheme("readable"),
+  theme = shinytheme("flatly"),
   # Application title
   "Exploring HPI Dataset",
   tabPanel(
@@ -65,10 +65,6 @@ will answer by analysing the data downloaded on happyplanetindex.org are:"),
        tags$li("The region with the highest average life expectany is", le_max), 
        tags$li("The region with the lowest average inequality of outcomes is",inequality_min),
        tags$li("Last but not the least, the region with the lowest average ecological footprints is", footprint_min))
-    
-    
-       
-    
   ),
   # tab panel for histogram
   tabPanel(
