@@ -1,12 +1,3 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(plotly)
 library(shinythemes)
@@ -19,7 +10,7 @@ shinyUI(navbarPage(
   
   # tab panel for histogram
   tabPanel(
-    "life expectancy",
+    "Life Expectancy",
     titlePanel("Life Expectancy"),
     # create sidebar layout for histogram
     sidebarLayout(
@@ -53,7 +44,21 @@ shinyUI(navbarPage(
           tabPanel("Scatterplot",
                    fluidRow(
                      plotlyOutput("life_scatter")
-                   )
+                   ),
+                   tags$p("If all countries are taken into consideration,",
+                          tags$i("the Pearson's correlation coefficient"), 
+                          "for these two variables was found to be ", 
+                          paste0(signif(overall_life_pcc, 3), "."),"This suggests 
+                          that there is a",
+                          tags$b("moderate positive correlation"),
+                          "between a country's gdp per capita and
+                          life expectancy."),
+                   tags$p("With a",
+                          tags$i("p-value"), "of",
+                          tags$b(paste0(signif(life_p_value, 3), ",")), "there 
+                          is enough evidence to reject the null hypothesis that
+                          the true correlation is equal to 0. The results were 
+                          statistically significant.")
                    ),
           tabPanel("Histogram",
                    fluidRow(
@@ -110,15 +115,17 @@ shinyUI(navbarPage(
                      plotlyOutput("pop_scatter"),
                      textOutput("pop_info")
                    ),
-                   tags$p("If all countries are taken into consideration, the 
-                          Pearson's correlation coefficient for these two
-                          variables was found to be ", 
+                   tags$p("If all countries are taken into consideration,",
+                          tags$i("the Pearson's correlation coefficient"),
+                          "for these two variables was found to be ", 
                           paste0(signif(overall_pop_pcc, 3), "."),"This suggests 
-                          that there is a very weak negative correlation
+                          that there is a ",
+                          tags$b("very weak negative"), "correlation
                           between a country's population and a country's
                           footprint."),
-                   tags$p("With a p-value of ",
-                          paste0(signif(pop_p_value, 3), ",") , "there
+                   tags$p("With a",
+                          tags$i("p-value"), "of",
+                          tags$b(paste0(signif(pop_p_value, 3), ",")), "there
                           is not enough evidence to reject the null hypothesis
                           that the true correlation is equal to 0. The results
                           were not statistically significant.")
@@ -127,20 +134,21 @@ shinyUI(navbarPage(
                    fluidRow(
                      plotlyOutput("gdp_scatter")
                    ),
-                   tags$p("If all countries are taken into consideration, the 
-                          Pearson's correlation coefficient for these two
-                          variables was found to be ", 
-                          paste0(signif(overall_gdp_pcc, 3), "."), 
-                          "This suggests that there is a very strong positive
-                          correlation between a country's gdp per capita and a 
+                   tags$p("If all countries are taken into consideration,",
+                          tags$i("the Pearson's correlation coefficient"),
+                          "for these two variables was found to be ", 
+                          tags$b(paste0(signif(overall_gdp_pcc, 3), ".")), 
+                          "This suggests that there is a",
+                          tags$b("very strong positive"),
+                          "correlation between a country's gdp per capita and a 
                           country's footprint."),
-                   tags$p("With a p-value of ", 
-                          paste0(signif(gdp_p_value, 2), ","), "there 
+                   tags$p("With a", tags$i("p-value"), "of", 
+                          tags$b(paste0(signif(gdp_p_value, 2), ",")), "there 
                           is enough evidence to reject the null hypothesis that
                           the true correlation is equal to 0. The results were 
                           statistically significant.")
                    ),
-          tabPanel("Summary",
+          tabPanel("Region Summary",
                    fluidRow(
                      column(6,
                             tableOutput("region_summary")

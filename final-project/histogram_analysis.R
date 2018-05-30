@@ -39,3 +39,7 @@ life_exp_table <- hist_hpi %>%
 
 life_exp_table$gdp_capita <- life_exp_table$gdp_capita / 1000
 life_exp_table$Population <- life_exp_table$Population / (10^6)
+
+overall_life_pcc <- cor(life_exp_table$gdp_capita, life_exp_table$avg_life_exp)
+life_p_value <- cor.test(life_exp_table$gdp_capita,
+                        life_exp_table$avg_life_exp)$p.value

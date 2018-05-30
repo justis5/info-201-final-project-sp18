@@ -1,12 +1,3 @@
-#
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
-
 library("shiny")
 library("plotly")
 library("dplyr")
@@ -20,11 +11,11 @@ source("scripts/build_life_scatter.R")
 
 hpi.data <- read.csv("./data/hpi.csv")
 
-
 shinyServer(function(input, output) {
   output$life_scatter <- renderPlotly({
     life_exp_df <- life_exp_table %>%
-      filter(if (input$life_region != "All") Region == input$life_region else TRUE)
+      filter(if (input$life_region != "All") Region == input$life_region
+             else TRUE)
     plot <- build_scatter_life_exp(life_exp_df, input$life_region)
   })
   

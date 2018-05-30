@@ -27,10 +27,10 @@ footprint_region_summary <- footprint_table %>%
             gdp_pcc = cor(gdp_capita, footprint))
 
 colnames(footprint_region_summary)[colnames(footprint_region_summary) ==
-                            "mean_population"] <- "Mean Pop (mill)"
+                            "mean_population"] <- "mean pop (mill)"
 colnames(footprint_region_summary)[colnames(footprint_region_summary) == 
                                      "mean_footprint"] <-
-  "Footprint (gha capita)" 
+  "footprint (gha capita)" 
 
 overall_pop_pcc <- cor(footprint_table$population, footprint_table$footprint)
 pop_p_value <- cor.test(footprint_table$population,
