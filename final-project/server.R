@@ -7,6 +7,7 @@ library("countrycode")
 hpi.data <- read.csv("./data/hpi.csv")
 
 shinyServer(function(input, output) {
+  
   output$life_scatter <- renderPlotly({
     life_exp_df <- life_exp_table %>%
       filter(if (input$life_region != "All") Region == input$life_region

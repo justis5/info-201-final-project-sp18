@@ -7,7 +7,17 @@ shinyUI(navbarPage(
   theme = shinytheme("readable"),
   # Application title
   "Exploring HPI Dataset",
-  
+  tabPanel(
+    "Introduction",
+    titlePanel("Happy Planet Index"),
+    tags$p("The dataset we are working with is the Happy Planet Index 2016 
+    downloaded from from the Happy Planet Index", a("website.", href = "http://happyplanetindex.org/"),
+    "The group who collected the data is New Economics Foundation(NEF)."),
+    tags$img(
+      src = "https://static1.squarespace.com/static/5735c421e321402778ee0ce9/t/578cfd862994ca21a7d62685/1468968273705/?format=2500w",
+      width = 500)
+    
+  ),
   # tab panel for histogram
   tabPanel(
     "Life Expectancy",
