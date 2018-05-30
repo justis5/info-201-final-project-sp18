@@ -1,0 +1,5 @@
+source("./histogram_analysis.R")
+source("./scripts/build_histogram.R")
+source("./analysis.R")
+source("./scripts/build_scatter.R")
+source("./scripts/build_life_scatter.R")
